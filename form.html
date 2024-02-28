@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <table>
+        <caption>Registration Form</caption>
+        <form id="regForm" action="" method="">
+
+
+            <tr>
+                <td>EmployeeID</td>
+                <td><input type="number" id="empId" min="10001" max="15000" required></td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" id="firstName"  placeholder="enter name"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" id="lastName"></td>
+            </tr>
+            <tr>
+                <td>Department</td>
+                <td>
+
+                    <input type="radio" name="dept" value="IT">
+                    <label>IT</label><br>
+                    <input type="radio" name="dept" value="HR">
+                    <label>HR</label><br>
+                    <input type="radio" name="dept" value="finance">
+                    <label>Finance</label><br>
+                    <input type="radio" name="dept" value="admin">
+                    <label>Admin</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Joining</td>
+                <td><input type="date" id="joinDate"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" id="emailId"></td>
+            </tr>
+            <tr>
+                <td>Contact No</td>
+                <td><input type="text" id="contact"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea rows="5" cols="20" id="addr"></textarea></td>
+            </tr>
+            <tr>
+                <td>Training programs to be attended</td>
+                <td>
+
+                    <input type="checkbox">
+                    <label>Web basics</label><br>
+                    <input type="checkbox">
+                    <label>C#</label><br>
+                    <input type="checkbox">
+                    <label>Entity Framework</label><br>
+                    <input type="checkbox">
+                    <label>ASP.NET MVC</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+
+                    <button id="reg">Register</button>
+                    <button id="cancel">cancel</button>
+
+                </td>
+            </tr>
+        </form>
+
+
+    </table>
+    <script src="from.js"></script>
+</body>
+
+</html>
